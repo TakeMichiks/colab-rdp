@@ -23,7 +23,7 @@ sudo adduser MOHSINE chrome-remote-desktop
 printf "\nSetup Complete " >&2 ||
 printf "\nError Occured " >&2
 printf '\nCheck https://remotedesktop.google.com/headless  Copy Command Of Debian Linux And Paste Down\n'
-read -p "Paste Here: " CRP
+read -p "DISPLAY= /opt/google/chrome-remote-desktop/start-host --code="4/0AX4XfWjgmGuMI87z122JDNbVAMiOfRaK3rgVpi11O_t4nmqTXDJKQAVMB1pQF40pQ-Fk2w" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$(hostname): " CRP
 su - MOHSINE -c """$CRP"""
 printf 'Check https://remotedesktop.google.com/access/ \n\n'
 if sudo apt-get upgrade &> /dev/null
